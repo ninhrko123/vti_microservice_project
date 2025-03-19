@@ -14,11 +14,13 @@ import vti.account_service.service.IAccountService;
 import java.util.List;
 
 @RestController
-@RequiredArgsConstructor
 @RequestMapping(value = "/api/v1/accounts")
 public class AccountController {
-    private final IAccountService acService;
-    private final ModelMapper modelMapper;
+    @Autowired
+    private IAccountService acService;
+
+    @Autowired
+    private ModelMapper modelMapper;
 
     @GetMapping
     public List<AccountDTO> getListAccounts() {
