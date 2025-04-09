@@ -1,4 +1,4 @@
-package hungnv.api_gateway.services;
+package vti.api_gateway.services;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

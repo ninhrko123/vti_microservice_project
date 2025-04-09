@@ -1,0 +1,2 @@
+# Bỏ qua thư mục mysql-data và các file hệ thống bên trong
+mysql/mysql-data/

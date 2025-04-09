@@ -1,4 +1,4 @@
-package hungnv.api_gateway.response;
+package vti.api_gateway.response;
 
 import lombok.Getter;
 

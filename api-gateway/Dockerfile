@@ -5,9 +5,9 @@ FROM openjdk:17-jdk
 WORKDIR /app
 
 # Sao chép file JAR vào thư mục làm việc trong container
-COPY target/auth-service-0.0.1-SNAPSHOT.jar /app/auth-service-0.0.1-SNAPSHOT.jar
+COPY target/api-gateway-0.0.1-SNAPSHOT.jar /app/api-gateway-0.0.1-SNAPSHOT.jar
 
 # Chạy ứng dụng khi container khởi động
-ENTRYPOINT ["java", "-jar", "/app/auth-service-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/api-gateway-0.0.1-SNAPSHOT.jar"]
 
-EXPOSE 8082
+EXPOSE 8762
